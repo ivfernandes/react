@@ -1,13 +1,13 @@
 import React from "react";
 import Botao from "../botao";
+import "./style.scss";
 
 class Form extends React.Component {
     render() {
         return (
-            <form action="">
-                <div>
+            <form className="novaTarefa">
+                <div className="inputContainer">
                     <label htmlFor="tarefa">Adicione um novo estudo</label>
-                    <br/>
                     <input
                         type="text"
                         name="tarefa"
@@ -16,9 +16,8 @@ class Form extends React.Component {
                         required
                     />
                 </div>
-                <div>
+                <div className="inputContainer">
                     <label htmlFor="titulo">Tempo</label>
-                    <br/>
                     <input
                         type="time"
                         step="1"
